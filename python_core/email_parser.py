@@ -183,9 +183,7 @@ def parse_appeal_from_email(msg, uid):
         device_type=device_type,
         sentiment=sentiment,
         issue_description=issue,
-        raw_body=body[:1000],
         original_uid=uid,
-        confidence_score=confidence  # 🔥 НОВОЕ
     )
 
 def get_email_body(msg):

@@ -17,7 +17,7 @@ def main():
         return
     
     # Забираем письма за последние 30 дней
-    since = datetime.now() - timedelta(days=7)
+    since = datetime.now() - timedelta(days=1)
     
     print(f"Подключаюсь к почте {EMAIL}...")
     raw_emails = fetch_emails_from_imap(IMAP_SERVER, EMAIL, PASSWORD, since_date=since)
